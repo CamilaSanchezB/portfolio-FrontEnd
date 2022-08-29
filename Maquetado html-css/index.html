@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <!--Bootstrap CSS-->
+    <link href="dist/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/267edc9e77.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style=" font-family: 'Poppins'">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darkred shadow">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#"><img src="assets/APLogo-20-20.png" style="max-height: 40px;" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+              <li class="nav-item mx-2">
+                <a class="nav-link link-light underline-hover-effect" aria-current="page" href="#">Sobre mí</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link link-light underline-hover-effect" href="#" >Habilidades</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link link-light underline-hover-effect" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link link-light underline-hover-effect" href="#" >Contacto</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-warning rounded-pill px-4 me-3" ><b>Añadir sección</b></button>
+            <button class="btn btn-outline-warning rounded-pill px-4" id="btn-login" type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><b>Login</b></button>
+          </div>
+        </div>
+    </nav>
+    <header class="bg-dark container-fluid text-light py-4">
+        <div class="container ps-5"> 
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight"><h3 class="ps-5 ms-5">Bienvenido</h3></div>
+            <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+            <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+          </div>         
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <div class="row  d-flex justify-content-around container">
+              <ul class="list-group col-1 bg-transparent">
+                <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"><i class="fa-brands fa-github"></i></a></li>
+                <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"><i class="fa-brands fa-twitter"></i></a></i></li>
+                <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"><i class="fa-brands fa-instagram"></i></a></i></li>
+              </ul>
+                <div class="col-8">
+                    <h1 class="display-1"><strong>¡Hola! Soy Camila Sánchez</strong></h1>
+                    <div class="mt-5">
+                      <button type="button" class="btn btn-c1 btn-lg me-2"><strong>PROYECTOS</strong></button>
+                      <button type="button" class="btn btn-c2 btn-lg ms-2"><strong>CONTACTO</strong></button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="assets/imagen-1.png" alt="Foto Camila Sánchez" class="img-fluid rounded-circle float-end" width="330" height="330" style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25); border-bottom: 5px solid #79031D;" />
+                </div>
+    
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header text-dark">
+                <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="text-dark">
+                  <div class="mb-3">
+                    <label for="InputUsername" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="InputUsername" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="InputPassword" required>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recordame</label>
+                  </div>
+                  <div class="text-center d-grid gap-2">
+                    <button type="submit" class="btn btn-c1" id="btn-login-modal">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+      <section class="bg-dark-1 container-fluid text-light py-5">
+        <div class="container ps-5">
+          
+          <div class="row  d-flex justify-content-around container">
+            <div class="col-3">
+              <img src="assets/20220621_164423.jpg" alt="Foto Camila Sánchez" class="img-fluid ns float-start" width="330" height="330" />
+            </div>
+            <div class="col-9">
+              <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="underline-y">Sobre mí</h3></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+              </div> 
+              <div class="d-flex justify-content-between pt-2">
+                <p class="text-justify ">Me llamo Camila Sánchez, soy de Mar del Plata y tengo 17 años. 
+                  Actualmente soy estudiante de 6to año en la especialidad informática de la E.E.S.T. N°5.
+                  Desarrollé proyectos tanto dentro del colegio como fuera, actualmente estoy cursando la 2da etapa de "Argentina Programa" y, a su vez, soy parte de un grupo que se encuentra desarrollando una aplicacón para el concurso “Tic Tac, ¡Hora de innovar!”. 
+                  Cuando termine el secundario me gustaría estudiar ingeniería informática y estoy en busca de nuevos desafíos.
+                  </p>
+                  <ul class="list-group col-1 bg-transparent">
+                    <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"  ><i class="fa-brands fa-twitter"></i></a></i></li>
+                    <li class="list-group-item bg-transparent text-white border-0 wh-30"><a href="" class="fa shadow"><i class="fa-brands fa-instagram"></i></a></i></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark container-fluid text-light py-5">
+        <div class="container ps-5">
+          <div class="row  d-flex justify-content-around container">
+            <div class="col">
+              <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="underline-y">Proyectos</h3></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+              </div> 
+            </div>
+          </div>
+          
+          <div class="row  d-flex justify-content-around container pt-3">
+            <div class="col-4">
+              <div class="card c-proyecto c-proyecto-php text-center" style="width: 18rem;">
+                <div class="card-header text-center">
+                  <div class="py-2">
+                    <i class="i-proyecto fa-brands fa-php "></i>
+                  </div>
+                </div>
+                <div class="card-body justify-content-center">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quibusdam, est dolor obcaecati dicta alias, enim molestiae nobis consequatur nemo et asperiores mollitia </p>
+                  <a href="#" class="btn btn-pr btn-pr-php mt-4 mb-2" ><strong>Ver más</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card c-proyecto c-proyecto-js text-center" style="width: 18rem;">
+                <div class="card-header text-center">
+                  <div class="py-2">
+                    <i class="fa-brands fa-square-js i-proyecto"></i>
+                  </div>
+                </div>
+                <div class="card-body justify-content-center">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quibusdam, est dolor obcaecati dicta alias, enim molestiae nobis consequatur nemo et asperiores mollitia </p>
+                  <a href="#" class="btn btn-pr btn-pr-js mt-4 mb-2" ><strong>Ver más</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card c-proyecto c-proyecto-html5 text-center" style="width: 18rem;">
+                <div class="card-header text-center">
+                  <div class="py-2">
+                    <i class="fa-brands fa-html5 i-proyecto"></i>
+                  </div>
+                </div>
+                <div class="card-body justify-content-center">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quibusdam, est dolor obcaecati dicta alias, enim molestiae nobis consequatur nemo et asperiores mollitia </p>
+                  <a href="#" class="btn btn-pr btn-pr-html5 mt-4 mb-2" ><strong>Ver más</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark-1 container-fluid text-light py-5">
+        <div class="container ps-5">
+          <div class="row  d-flex justify-content-around container">
+            <div class="col-6">
+              <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="underline-y">Información académica</h3></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+              </div> 
+              <div class="card my-2 bg-dark mt-3 shadow">
+                <div class="card-header bg-darkred">
+                  Escuela de Educación Secundaria Técnica n°5
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">2017 - Actualidad</p>
+                  <p>Técnica en informática</p>
+                </div>
+              </div>
+              <div class="card my-2 bg-dark shadow">
+                <div class="card-header bg-darkred">
+                  Colegio Sagrada Familia
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">2013 - 2016</p>
+                  <p>Escuela primaria</p>
+                </div>
+              </div>
+              <div class="card my-2 bg-dark shadow">
+                <div class="card-header bg-darkred">
+                  Colegio Jorge Luis Borges
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">2011 - 2012</p>
+                  <p>Escuela primaria</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="underline-y">Habilidades</h3></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+              </div> 
+              <div class="card my-2 bg-dark mt-3 shadow">
+                <div class="card-header bg-darkred">
+                  Habilidades de desarrollo
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Arduino</li>
+                    <li>JAVA</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>MySql</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card my-2 bg-dark shadow">
+                <div class="card-header bg-darkred">
+                  Idiomas
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">2017 - 2021</p>
+                  <p>Inglés, B1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark container-fluid text-light py-5">
+        <div class="container ps-5">
+          <div class="row  d-flex justify-content-around container">
+            <div class="col">
+              <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="underline-y">Contacto</h3></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-pencil"></i></a></div>
+                <div class="p-2 bd-highlight"><a href="" class="link-warning"><i class="fa-solid fa-trash"></i></a></div>
+              </div> 
+            </div>
+          </div>
+          <div class="row  d-flex justify-content-around container mt-3">
+            <div class="col-5">
+              <ul type="none">
+                <li><i class="fa-solid fa-envelope pe-2"></i> <a href="mailto:'camilasanchezbonaldo@gmail.com'" class="btn-link link-dr">camilasanchezbonaldo@gmail.com</a></li>
+                <li><i class="fa-brands fa-whatsapp pe-3"></i><a href="https://wa.me/2236807908" class="btn-link link-dr">2236807908</a></li>
+                <li><i class="fa-brands fa-linkedin pe-3"></i><a href="https://www.linkedin.com/in/csanchezbonaldo/"class="btn-link link-dr">https://www.linkedin.com/in/csanchezbonaldo/</a></li>
+              </ul>
+            </div>
+            <div class="col-7">
+              <form action="">
+                <div class="row g-2 mb-3">
+                  <div class="col-auto">
+                    <label for="ContactName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control " id="ContactName" placeholder="Su nombre">
+                  </div>
+                  <div class="col-auto">
+                    <label for="ContactLastName" class="form-label" >Apellido</label>
+                    <input type="text" class="form-control" id="ContactLastName" placeholder="Su apellido">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="ContactEmail" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="ContactEmail" placeholder="email@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                  <label for="ContactMessage" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="ContactMessage" rows="4"></textarea>
+                </div>
+                <div class="text-center d-grid gap-2">
+                  <button type="submit" class="btn btn-c1"><strong>Enviar</strong></button>
+                </div>
+              </form>
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Bootstrap JS-->
+    <script src="dist/bootstrap/js/bootstrap.js"></script>
+    <script src="dist/bootstrap/js/bootstrap.esm.js"></script>
+    <!--Popper JS-->
+    <script src="dist/popper.js"></script>
+</body>
+</html>
